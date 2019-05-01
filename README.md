@@ -144,6 +144,9 @@ Apr 28 20:14:22 MichaelWS systemd[1]: Failed to start Load Kernel Modules.
 
 
 
+Configurations: Note if you are going to use them, be careful of the directories, you may need to change them to fit your system. 
+
+Conky and i3-bar effects are:
 
 
-
+![alt text](http://url/to/img.png)
