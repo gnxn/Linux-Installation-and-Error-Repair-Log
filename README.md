@@ -149,4 +149,4 @@ Configurations: Note if you are going to use them, be careful of the directories
 Conky and i3-bar effects are:
 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/gnxn/Linux-Installation-and-Error-Require-Log/blob/master/Example.png)
