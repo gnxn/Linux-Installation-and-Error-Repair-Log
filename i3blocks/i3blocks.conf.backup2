@@ -1,0 +1,67 @@
+# i3blocks config file
+
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+
+# List of valid properties:
+
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+command=/usr/lib/i3blocks/$BLOCK_NAME
+# Global properties
+separator_block_width=16
+markup=none
+
+[date]
+label=
+command=date '+%d/%m/%Y'
+interval=3600
+
+[time]
+label=
+command=date '+%H:%M:%S'
+interval=1
+
+[disk-home]
+label=
+command=/usr/lib/i3blocks/disk $HOME
+interval=30
+
+[disk-root]
+command=~/.i3-blocks-contrib/disk
+interval=30
+
+[volume]
+label=
+command=/usr/lib/i3blocks/volume 
+interval=1
+
+
+[memory]
+command=/usr/lib/i3blocks/memory
+interval=3
+label=
+
+[cpu-temp]
+label=
+command=/usr/lib/i3blocks/temperature
+interval=30
+
+
+[load_average]
+label=
+interval=5
+color=#00ff7f
