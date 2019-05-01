@@ -83,21 +83,37 @@ After installing the system, upgrading the system causes error.
 
 -- Reboot --
 Mar 12 11:46:48 MichaelWS systemd-modules-load[278]: Inserted module 'crypto_user'
+
 Mar 12 11:46:48 MichaelWS systemd-modules-load[278]: Failed to insert module 'vboxdrv': Exec format error
+
 Mar 12 11:46:48 MichaelWS systemd-modules-load[278]: Failed to insert module 'vboxpci': Exec format error
+
 Mar 12 11:46:48 MichaelWS systemd-modules-load[278]: Failed to insert module 'vboxnetadp': Exec format error
+
 Mar 12 11:46:48 MichaelWS systemd-modules-load[278]: Failed to insert module 'vboxnetflt': Exec format error
+
 Mar 12 11:46:48 MichaelWS systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+
 Mar 12 11:46:48 MichaelWS systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+
 Mar 12 11:46:48 MichaelWS systemd[1]: Failed to start Load Kernel Modules.
+
 -- Reboot --
+
 Mar 12 12:00:00 MichaelWS systemd-modules-load[275]: Inserted module 'crypto_user'
+
 Mar 12 12:00:00 MichaelWS systemd-modules-load[275]: Failed to insert module 'vboxdrv': Exec format error
+
 Mar 12 12:00:00 MichaelWS systemd-modules-load[275]: Failed to insert module 'vboxpci': Exec format error
+
 Mar 12 12:00:00 MichaelWS systemd-modules-load[275]: Failed to insert module 'vboxnetadp': Exec format error
+
 Mar 12 12:00:00 MichaelWS systemd-modules-load[275]: Failed to insert module 'vboxnetflt': Exec format error
+
 Mar 12 12:00:00 MichaelWS systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+
 Mar 12 12:00:00 MichaelWS systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+
 Mar 12 12:00:00 MichaelWS systemd[1]: Failed to start Load Kernel Modules.
 
 This appears to be that the latest kernel does not hold such modules since downgrading only modules and nvidia will suffice. Yet it is still unknown to what the cause of the issue is.
@@ -109,12 +125,19 @@ The same problem persists. It appears to be a dependency issue, requires further
 
 -- Reboot --
 Apr 28 20:14:21 MichaelWS systemd[1]: Starting Load Kernel Modules...
+
 Apr 28 20:14:22 MichaelWS systemd-modules-load[584]: Failed to insert module 'vboxdrv': Exec format error
+
 Apr 28 20:14:22 MichaelWS systemd-modules-load[584]: Failed to insert module 'vboxpci': Exec format error
+
 Apr 28 20:14:22 MichaelWS systemd-modules-load[584]: Failed to insert module 'vboxnetadp': Exec format error
+
 Apr 28 20:14:22 MichaelWS systemd-modules-load[584]: Failed to insert module 'vboxnetflt': Exec format error
+
 Apr 28 20:14:22 MichaelWS systemd[1]: systemd-modules-load.service: Main process exited, code=exited, status=1/FAILURE
+
 Apr 28 20:14:22 MichaelWS systemd[1]: systemd-modules-load.service: Failed with result 'exit-code'.
+
 Apr 28 20:14:22 MichaelWS systemd[1]: Failed to start Load Kernel Modules.
 
 
