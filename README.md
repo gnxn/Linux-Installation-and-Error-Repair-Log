@@ -141,6 +141,24 @@ Apr 28 20:14:22 MichaelWS systemd[1]: systemd-modules-load.service: Failed with 
 Apr 28 20:14:22 MichaelWS systemd[1]: Failed to start Load Kernel Modules.
 
 
+2019.05.02
+
+The same problem persists. 
+
+From kernel 4.20.11 to kernel 5.0.10.
+
+The kernel upgrades and installs correct dkms modules while upgrading. (yay -Syu).
+
+However, the immediate reboot shows systemd-modules.load.service and ufw.service are not loaded. (systemctl --failed)
+
+Further examination to journalctl -u systemd-modules-load.service shows systemd-modules-load.service: Succeeded. 
+
+However, due to the fact uname -a still yields 4.20.11 as the current kernel, it was obvious that it was not upgrading.
+
+Therefore, after 4 month of trying, it is clear that I am stuck to this kernel (4.20.11) for some reason. 
+
+
+
 
 
 
