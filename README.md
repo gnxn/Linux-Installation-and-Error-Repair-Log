@@ -157,8 +157,15 @@ However, due to the fact uname -a still yields 4.20.11 as the current kernel, it
 
 Therefore, after 4 month of trying, it is clear that I am stuck to this kernel (4.20.11) for some reason. 
 
+2019.05.06
 
+Note, the above issue is the result of not writing fstab file, normally located in /etc/fstab. 
 
+Either run genfstab before you finishes your installation or you may read the documentations and write fstab by yourself. 
+
+https://wiki.archlinux.org/index.php/Fstab
+
+However, if you don't have fstab, you can still boot and upgrade modules and software. It is only because with the lack of fstab, your boot partition is not mounted automatically therefore when update command is ran, the kernel itself is not upgraded hence resulting in the inconsistences. 
 
 
 
