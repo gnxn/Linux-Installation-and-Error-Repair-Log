@@ -1,15 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-
-case $(tty) in /dev/tty1)
-    bash /scripts/profile
-    exit
-esac
+#case $(tty) in /dev/tty1)
+#    bash /scripts/profile
+#    exit
+#esac
 
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/michael/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,4 +113,4 @@ alias texmk='latexmk -pdf -pvc'
 alias scrstp="xrandr --output DP-3.1 --auto --output eDP-1-1 --auto --right-of DP-3.1"
 alias bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias netrst="sudo systemctl restart NetworkManager"
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
